@@ -1,0 +1,21 @@
+[/]
+audible-bell=true
+background-color='rgb(16,89,106)'
+background-transparency-percent=11
+bold-is-bright=false
+cell-width-scale=1.0
+cursor-shape='ibeam'
+custom-command='zsh'
+default-size-columns=100
+default-size-rows=24
+font='Fira Code 14'
+foreground-color='rgb(206,235,239)'
+login-shell=false
+palette=['rgb(11,70,86)', 'rgb(243,50,47)', 'rgb(254,251,102)', 'rgb(181,137,0)', 'rgb(67,169,240)', 'rgb(211,54,130)', 'rgb(49,188,177)', 'rgb(238,232,213)', 'rgb(151,170,175)', 'rgb(203,75,22)', 'rgb(230,223,41)', 'rgb(73,188,230)', 'rgb(150,201,207)', 'rgb(138,144,247)', 'rgb(171,186,212)', 'rgb(253,246,227)']
+scroll-on-output=false
+use-custom-command=false
+use-system-font=false
+use-theme-colors=false
+use-theme-transparency=false
+use-transparent-background=true
+visible-name='My Config'
