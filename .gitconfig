@@ -1,0 +1,21 @@
+[core]
+        quotepath = false
+[user]
+        
+[alias]
+        st = status
+        cm = commit
+        ck = checkout
+        br = branch
+        lg = "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+        mg = merge
+        ls = "ls-tree -r -t --name-only --full-tree HEAD"
+        zip = "!f() { git archive --format zip --output $1 HEAD; }; f"
+[gui]
+        encoding = utf-8
+[i18n "commit"]
+        encoding = utf-8
+[i18n]
+        logoutputencoding = utf-8
+[init]
+        defaultBranch = main
