@@ -1,29 +1,9 @@
-# export RUST_LOG="info,hyper=warn"
+export ZSH="$HOME/.oh-my-zsh"
 
-# Path to your oh-my-zsh installation.
-export ZSH="/Users/bytedance/.oh-my-zsh"
-
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="agnoster"
 
-# Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
-
-# Uncomment the following line to automatically update without prompting.
-# DISABLE_UPDATE_PROMPT="true"
-
-# Uncomment the following line to change how often to auto-update (in days).
 export UPDATE_ZSH_DAYS=28
 
-# Uncomment the following line if you want to change the command execution time
-# stamp shown in the history command output.
-# You can set one of the optional three formats:
-# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# or set a custom format using the strftime function format specifications,
-# see 'man strftime' for details.
 HIST_STAMPS="yyyy-mm-dd"
 
 plugins=(
@@ -51,5 +31,14 @@ alias untar='tar xvf'
 alias tab2space='sed "s/\t/    /g" -i.bak'
 alias rg='rg --color=always '
 alias py='python3'
+alias x='HTTP_PROXY=127.0.0.1:3214 HTTPS_PROXY=127.0.0.1:3214 '
+EXA=$(which exa)
+if [[ -x "$EXA" ]]; then
+    alias ls='exa'
+else 
+    echo "Warning: exa not found"
+fi
+
 
 export HOMEBREW_NO_AUTO_UPDATE=true
+# export RUST_LOG="info,hyper=warn"
