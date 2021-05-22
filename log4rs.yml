@@ -5,7 +5,7 @@ appenders:
     # i.e. formatter
     encoder:
       kind: pattern
-      pattern: "{date(%H:%M:%S%.3f)} [{highlight({level:5})}] (({target:15}:{line:4})) - {message}{n}"
+      pattern: "{date(%H:%M:%S%.3f)} [{highlight({level:5})}] (({target:15}:{line})) - {message}{n}"
   
   file_appender:
     kind: rolling_file
