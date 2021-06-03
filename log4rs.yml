@@ -6,6 +6,9 @@ appenders:
     encoder:
       kind: pattern
       pattern: "{date(%H:%M:%S%.3f)} [{highlight({level:5})}] (({target:15}:{line})) - {message}{n}"
+    filters:
+      - kind: "threshold"
+        level: "info"
   
   file_appender:
     kind: rolling_file
@@ -25,7 +28,7 @@ appenders:
       pattern: "{date(%Y-%m-%d %H:%M:%S%.f %Z)} [{level}] (({target}:{line})) - {message}{n}"
 
 root:
-  level: info
+  level: debug
   appenders:
     - file_appender
     - console_appender
