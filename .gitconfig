@@ -19,3 +19,5 @@
         logoutputencoding = utf-8
 [init]
         defaultBranch = main
+[push]
+        followTags = true
