@@ -31,7 +31,7 @@ alias untar='tar xvf'
 alias tab2space='sed "s/\t/    /g" -i.bak'
 alias rg='rg --color=always '
 alias py='python3'
-alias x='HTTP_PROXY=127.0.0.1:3214 HTTPS_PROXY=127.0.0.1:3214 '
+alias x='HTTP_PROXY=127.0.0.1:7890 HTTPS_PROXY=127.0.0.1:7890 '
 EXA=$(which exa)
 if [[ -x "$EXA" ]]; then
     alias ls='exa'
