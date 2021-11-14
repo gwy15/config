@@ -1,5 +1,4 @@
 export ZSH="$HOME/.oh-my-zsh"
-export ZSH="$HOME/.oh-my-zsh"
 export UPDATE_ZSH_DAYS=28
 
 ZSH_THEME="agnoster"
