@@ -1,9 +1,8 @@
 export ZSH="$HOME/.oh-my-zsh"
-
-ZSH_THEME="agnoster"
-
+export ZSH="$HOME/.oh-my-zsh"
 export UPDATE_ZSH_DAYS=28
 
+ZSH_THEME="agnoster"
 HIST_STAMPS="yyyy-mm-dd"
 
 plugins=(
@@ -33,13 +32,17 @@ alias rg='rg --color=always '
 alias py='python3'
 alias dc='docker-compose'
 alias x='HTTP_PROXY=127.0.0.1:7890 HTTPS_PROXY=127.0.0.1:7890 '
-EXA=$(which exa)
-if [[ -x "$EXA" ]]; then
-    alias ls='exa'
-else 
-    echo "Warning: exa not found"
-fi
 
+function _ls() {
+    exa=$(which exa)
+    if [[ -x "$exa" ]] then
+        $exa $@
+    else
+        /usr/bin/ls $@
+    fi
+}
+alias ls=_ls
 
 export HOMEBREW_NO_AUTO_UPDATE=true
+export PATH=$PATH:$HOME/.cargo/bin:$HOME/.local/bin
 # export RUST_LOG="info,hyper=warn"
