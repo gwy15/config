@@ -44,4 +44,5 @@ alias ls=_ls
 
 export HOMEBREW_NO_AUTO_UPDATE=true
 export PATH=$PATH:$HOME/.cargo/bin:$HOME/.local/bin
+export PATH=$PATH:/usr/local/opt/mysql-client/bin
 # export RUST_LOG="info,hyper=warn"
