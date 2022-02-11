@@ -37,7 +37,7 @@ function _ls() {
     if [[ -x "$exa" ]] then
         $exa $@
     else
-        /usr/bin/ls $@
+        /bin/ls $@
     fi
 }
 alias ls=_ls
