@@ -42,6 +42,16 @@ function _ls() {
 }
 alias ls=_ls
 
+function _cat() {
+    bat=$(which bat)
+    if [[ -x "$bat" ]] then
+        $bat $@
+    else
+        /bin/cat $@
+    fi
+}
+alias cat=_cat
+
 export HOMEBREW_NO_AUTO_UPDATE=true
 export PATH=$PATH:$HOME/.cargo/bin:$HOME/.local/bin
 export PATH=$PATH:/usr/local/opt/mysql-client/bin
