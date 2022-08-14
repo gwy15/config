@@ -1,14 +1,10 @@
 DOMAIN,local.gwy15.com
 
 DOMAIN,nas.gwy15.com
-DOMAIN,nas-ex.gwy15.com
 DOMAIN-SUFFIX,nas.gwy15.com
-DOMAIN-SUFFIX,nas-ex.gwy15.com
-
 DOMAIN,photos.gwy15.com
-DOMAIN,photos-ex.gwy15.com
-DOMAIN-SUFFIX,photos.gwy15.com
-DOMAIN-SUFFIX,photos-ex.gwy15.com
+DOMAIN,synology.me
+
 
 DOMAIN,nanyangpt.com
 DOMAIN-SUFFIX,nanyangpt.com
