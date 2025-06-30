@@ -32,26 +32,6 @@ alias py='python3'
 alias dc='docker-compose'
 alias x='HTTP_PROXY=127.0.0.1:7890 HTTPS_PROXY=127.0.0.1:7890 '
 
-function _ls() {
-    exa=$(which exa)
-    if [[ -x "$exa" ]] then
-        $exa $@
-    else
-        /bin/ls $@
-    fi
-}
-alias ls=_ls
-
-function _cat() {
-    bat=$(which bat)
-    if [[ -x "$bat" ]] then
-        $bat $@
-    else
-        /bin/cat $@
-    fi
-}
-alias cat=_cat
-
 export HOMEBREW_NO_AUTO_UPDATE=true
 export PATH=$PATH:$HOME/.cargo/bin:$HOME/.local/bin
 export PATH=$PATH:/usr/local/opt/mysql-client/bin
